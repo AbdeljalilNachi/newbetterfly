@@ -48,6 +48,28 @@ public class CacheConfiguration {
             createCache(cm, com.betterfly.domain.User.class.getName());
             createCache(cm, com.betterfly.domain.Authority.class.getName());
             createCache(cm, com.betterfly.domain.User.class.getName() + ".authorities");
+            createCache(cm, com.betterfly.domain.Action.class.getName());
+            createCache(cm, com.betterfly.domain.AnalyseEnvirommentale.class.getName());
+            createCache(cm, com.betterfly.domain.AnalyseSST.class.getName());
+            createCache(cm, com.betterfly.domain.AnalyseSWOT.class.getName());
+            createCache(cm, com.betterfly.domain.Audit.class.getName());
+            createCache(cm, com.betterfly.domain.Audit.class.getName() + ".procs");
+            createCache(cm, com.betterfly.domain.AutreAction.class.getName());
+            createCache(cm, com.betterfly.domain.BesoinPI.class.getName());
+            createCache(cm, com.betterfly.domain.ConstatAudit.class.getName());
+            createCache(cm, com.betterfly.domain.Document.class.getName());
+            createCache(cm, com.betterfly.domain.IndicateurSMI.class.getName());
+            createCache(cm, com.betterfly.domain.NonConformite.class.getName());
+            createCache(cm, com.betterfly.domain.Objectif.class.getName());
+            createCache(cm, com.betterfly.domain.ObligationConformite.class.getName());
+            createCache(cm, com.betterfly.domain.PlanificationRDD.class.getName());
+            createCache(cm, com.betterfly.domain.PolitiqueQSE.class.getName());
+            createCache(cm, com.betterfly.domain.ProcessusSMI.class.getName());
+            createCache(cm, com.betterfly.domain.Reclamation.class.getName());
+            createCache(cm, com.betterfly.domain.ResultatIndicateur.class.getName());
+            createCache(cm, com.betterfly.domain.ResultIndicateurs.class.getName());
+            createCache(cm, com.betterfly.domain.ResultIndicateurs.class.getName() + ".resultats");
+            createCache(cm, com.betterfly.domain.Risque.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }
