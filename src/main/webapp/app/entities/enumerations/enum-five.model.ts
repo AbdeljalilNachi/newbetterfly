@@ -1,11 +1,12 @@
 export enum EnumFive {
-  ONE = 'ONE',
+  ONE = '1',
 
-  TWO = 'TWO',
+  TWO = '2',
 
-  THREE = 'THREE',
+  THREE = '3',
 
-  FOUR = 'FOUR',
+  FOUR = '4',
 
-  FIVE = 'FIVE',
+  FIVE = '5',
 }
+ 
