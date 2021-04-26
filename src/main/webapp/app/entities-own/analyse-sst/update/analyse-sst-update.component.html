@@ -51,8 +51,8 @@
         </div>
 
         <div class="form-group">
-          <label class="form-control-label" jhiTranslate="newbetterflyApp.analyseSST.uniteTravail" for="field_uniteTravail"
-            >Unite Travail</label
+          <label class="form-control-label" 
+            >Unité Travail</label
           >
           <input
             type="text"
@@ -75,7 +75,7 @@
         </div>
 
         <div class="form-group">
-          <label class="form-control-label" jhiTranslate="newbetterflyApp.analyseSST.competence" for="field_competence">Competence</label>
+          <label class="form-control-label" >Compétence</label>
           <input
             type="text"
             class="form-control"
@@ -97,20 +97,19 @@
         </div>
 
         <div class="form-group">
-          <label class="form-control-label" jhiTranslate="newbetterflyApp.analyseSST.frequence" for="field_frequence">Frequence</label>
+          <label class="form-control-label" >Fréquence</label>
           <select class="form-control" name="frequence" formControlName="frequence" id="field_frequence" data-cy="frequence">
             <option [ngValue]="null">{{ 'newbetterflyApp.EnumFive.null' | translate }}</option>
-            <option value="ONE">{{ 'newbetterflyApp.EnumFive.ONE' | translate }}</option>
-            <option value="TWO">{{ 'newbetterflyApp.EnumFive.TWO' | translate }}</option>
-            <option value="THREE">{{ 'newbetterflyApp.EnumFive.THREE' | translate }}</option>
-            <option value="FOUR">{{ 'newbetterflyApp.EnumFive.FOUR' | translate }}</option>
-            <option value="FIVE">{{ 'newbetterflyApp.EnumFive.FIVE' | translate }}</option>
+            <option value="ONE">1</option>
+            <option value="TWO">2</option>
+            <option value="THREE">3</option>
+            <option value="FOUR">4</option>
           </select>
         </div>
 
         <div class="form-group">
-          <label class="form-control-label" jhiTranslate="newbetterflyApp.analyseSST.dureeExposition" for="field_dureeExposition"
-            >Duree Exposition</label
+          <label class="form-control-label" 
+            >Durée Exposition</label
           >
           <select
             class="form-control"
@@ -120,17 +119,16 @@
             data-cy="dureeExposition"
           >
             <option [ngValue]="null">{{ 'newbetterflyApp.EnumFive.null' | translate }}</option>
-            <option value="ONE">{{ 'newbetterflyApp.EnumFive.ONE' | translate }}</option>
-            <option value="TWO">{{ 'newbetterflyApp.EnumFive.TWO' | translate }}</option>
-            <option value="THREE">{{ 'newbetterflyApp.EnumFive.THREE' | translate }}</option>
-            <option value="FOUR">{{ 'newbetterflyApp.EnumFive.FOUR' | translate }}</option>
-            <option value="FIVE">{{ 'newbetterflyApp.EnumFive.FIVE' | translate }}</option>
+            <option value="ONE">1</option>
+            <option value="TWO">2</option>
+            <option value="THREE">3</option>
+            <option value="FOUR">4</option>
           </select>
         </div>
 
         <div class="form-group">
-          <label class="form-control-label" jhiTranslate="newbetterflyApp.analyseSST.coefficientMaitrise" for="field_coefficientMaitrise"
-            >Coefficient Maitrise</label
+          <label class="form-control-label" 
+            >Coéfficient maîtriser</label
           >
           <select
             class="form-control"
@@ -140,28 +138,27 @@
             data-cy="coefficientMaitrise"
           >
             <option [ngValue]="null">{{ 'newbetterflyApp.EnumFive.null' | translate }}</option>
-            <option value="ONE">{{ 'newbetterflyApp.EnumFive.ONE' | translate }}</option>
-            <option value="TWO">{{ 'newbetterflyApp.EnumFive.TWO' | translate }}</option>
-            <option value="THREE">{{ 'newbetterflyApp.EnumFive.THREE' | translate }}</option>
-            <option value="FOUR">{{ 'newbetterflyApp.EnumFive.FOUR' | translate }}</option>
-            <option value="FIVE">{{ 'newbetterflyApp.EnumFive.FIVE' | translate }}</option>
+            <option value="ONE">1</option>
+            <option value="TWO">2</option>
+            <option value="THREE">3</option>
+            <option value="FOUR">4</option>
           </select>
         </div>
 
         <div class="form-group">
-          <label class="form-control-label" jhiTranslate="newbetterflyApp.analyseSST.gravite" for="field_gravite">Gravite</label>
+          <label class="form-control-label" >Gravité</label>
           <select class="form-control" name="gravite" formControlName="gravite" id="field_gravite" data-cy="gravite">
             <option [ngValue]="null">{{ 'newbetterflyApp.EnumFive.null' | translate }}</option>
-            <option value="ONE">{{ 'newbetterflyApp.EnumFive.ONE' | translate }}</option>
-            <option value="TWO">{{ 'newbetterflyApp.EnumFive.TWO' | translate }}</option>
-            <option value="THREE">{{ 'newbetterflyApp.EnumFive.THREE' | translate }}</option>
-            <option value="FOUR">{{ 'newbetterflyApp.EnumFive.FOUR' | translate }}</option>
-            <option value="FIVE">{{ 'newbetterflyApp.EnumFive.FIVE' | translate }}</option>
+            <option value="ONE">1</option>
+            <option value="TWO">2</option>
+            <option value="THREE">3</option>
+            <option value="FOUR">4</option>
+            <option value="FIVE">5</option>
           </select>
         </div>
 
         <div class="form-group">
-          <label class="form-control-label" jhiTranslate="newbetterflyApp.analyseSST.criticite" for="field_criticite">Criticite</label>
+          <label class="form-control-label" >Criticité</label>
           <input type="number" class="form-control" name="criticite" id="field_criticite" data-cy="criticite" formControlName="criticite" />
         </div>
 
@@ -198,7 +195,7 @@
         </div>
 
         <div class="form-group">
-          <label class="form-control-label" jhiTranslate="newbetterflyApp.analyseSST.delegue" for="field_delegue">Delegue</label>
+          <label class="form-control-label" >Délégué</label>
           <select class="form-control" id="field_delegue" data-cy="delegue" name="delegue" formControlName="delegue">
             <option [ngValue]="null"></option>
             <option

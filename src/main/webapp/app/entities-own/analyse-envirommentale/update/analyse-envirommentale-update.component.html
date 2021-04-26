@@ -51,8 +51,8 @@
         </div>
 
         <div class="form-group">
-          <label class="form-control-label" jhiTranslate="newbetterflyApp.analyseEnvirommentale.activite" for="field_activite"
-            >Activite</label
+          <label class="form-control-label" 
+            >Activité</label
           >
           <input type="text" class="form-control" name="activite" id="field_activite" data-cy="activite" formControlName="activite" />
         </div>
@@ -121,16 +121,15 @@
         </div>
 
         <div class="form-group">
-          <label class="form-control-label" jhiTranslate="newbetterflyApp.analyseEnvirommentale.frequence" for="field_frequence"
-            >Frequence</label
+          <label class="form-control-label" 
+            >Fréquence</label
           >
           <select class="form-control" name="frequence" formControlName="frequence" id="field_frequence" data-cy="frequence">
             <option [ngValue]="null">{{ 'newbetterflyApp.EnumFive.null' | translate }}</option>
-            <option value="ONE">{{ 'newbetterflyApp.EnumFive.ONE' | translate }}</option>
-            <option value="TWO">{{ 'newbetterflyApp.EnumFive.TWO' | translate }}</option>
-            <option value="THREE">{{ 'newbetterflyApp.EnumFive.THREE' | translate }}</option>
-            <option value="FOUR">{{ 'newbetterflyApp.EnumFive.FOUR' | translate }}</option>
-            <option value="FIVE">{{ 'newbetterflyApp.EnumFive.FIVE' | translate }}</option>
+            <option value="ONE">1</option>
+            <option value="TWO">2</option>
+            <option value="THREE">3</option>
+            <option value="FOUR">4</option>
           </select>
         </div>
 
@@ -149,20 +148,18 @@
             data-cy="sensibiliteMilieu"
           >
             <option [ngValue]="null">{{ 'newbetterflyApp.EnumFive.null' | translate }}</option>
-            <option value="ONE">{{ 'newbetterflyApp.EnumFive.ONE' | translate }}</option>
-            <option value="TWO">{{ 'newbetterflyApp.EnumFive.TWO' | translate }}</option>
-            <option value="THREE">{{ 'newbetterflyApp.EnumFive.THREE' | translate }}</option>
-            <option value="FOUR">{{ 'newbetterflyApp.EnumFive.FOUR' | translate }}</option>
-            <option value="FIVE">{{ 'newbetterflyApp.EnumFive.FIVE' | translate }}</option>
+            <option value="ONE"> 1 </option>
+            <option value="TWO"> 2 </option>
+            <option value="THREE">3 </option>
+            <option value="FOUR">4</option>
           </select>
         </div>
 
         <div class="form-group">
           <label
             class="form-control-label"
-            jhiTranslate="newbetterflyApp.analyseEnvirommentale.coefficientMaitrise"
-            for="field_coefficientMaitrise"
-            >Coefficient Maitrise</label
+
+            >Coéfficient Maîtriser</label
           >
           <select
             class="form-control"
@@ -172,23 +169,21 @@
             data-cy="coefficientMaitrise"
           >
             <option [ngValue]="null">{{ 'newbetterflyApp.EnumFive.null' | translate }}</option>
-            <option value="ONE">{{ 'newbetterflyApp.EnumFive.ONE' | translate }}</option>
-            <option value="TWO">{{ 'newbetterflyApp.EnumFive.TWO' | translate }}</option>
-            <option value="THREE">{{ 'newbetterflyApp.EnumFive.THREE' | translate }}</option>
-            <option value="FOUR">{{ 'newbetterflyApp.EnumFive.FOUR' | translate }}</option>
-            <option value="FIVE">{{ 'newbetterflyApp.EnumFive.FIVE' | translate }}</option>
+            <option value="ONE">1</option>
+            <option value="TWO">2</option>
+            <option value="THREE">3</option>
+            <option value="FOUR">4</option>
           </select>
         </div>
 
         <div class="form-group">
-          <label class="form-control-label" jhiTranslate="newbetterflyApp.analyseEnvirommentale.gravite" for="field_gravite">Gravite</label>
+          <label class="form-control-label" >Gravité</label>
           <select class="form-control" name="gravite" formControlName="gravite" id="field_gravite" data-cy="gravite">
             <option [ngValue]="null">{{ 'newbetterflyApp.EnumFive.null' | translate }}</option>
-            <option value="ONE">{{ 'newbetterflyApp.EnumFive.ONE' | translate }}</option>
-            <option value="TWO">{{ 'newbetterflyApp.EnumFive.TWO' | translate }}</option>
-            <option value="THREE">{{ 'newbetterflyApp.EnumFive.THREE' | translate }}</option>
-            <option value="FOUR">{{ 'newbetterflyApp.EnumFive.FOUR' | translate }}</option>
-            <option value="FIVE">{{ 'newbetterflyApp.EnumFive.FIVE' | translate }}</option>
+            <option value="ONE">1</option>
+            <option value="TWO">2</option>
+            <option value="THREE">3</option>
+            <option value="FOUR">4</option>
           </select>
         </div>
 
@@ -235,7 +230,7 @@
         </div>
 
         <div class="form-group">
-          <label class="form-control-label" jhiTranslate="newbetterflyApp.analyseEnvirommentale.delegue" for="field_delegue">Delegue</label>
+          <label class="form-control-label" >Délégué</label>
           <select class="form-control" id="field_delegue" data-cy="delegue" name="delegue" formControlName="delegue">
             <option [ngValue]="null"></option>
             <option

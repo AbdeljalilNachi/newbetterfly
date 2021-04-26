@@ -51,7 +51,7 @@
         </div>
 
         <div class="form-group">
-          <label class="form-control-label" jhiTranslate="newbetterflyApp.reclamation.justifiee" for="field_justifiee">Justifiee</label>
+          <label class="form-control-label" >Justifiée</label>
           <input type="checkbox" class="form-check" name="justifiee" id="field_justifiee" data-cy="justifiee" formControlName="justifiee" />
         </div>
 
@@ -61,8 +61,8 @@
         </div>
 
         <div class="form-group">
-          <label class="form-control-label" jhiTranslate="newbetterflyApp.reclamation.piecejointe" for="field_piecejointe"
-            >Piecejointe</label
+          <label class="form-control-label" 
+            >Pièce jointe</label
           >
           <div>
             <div *ngIf="editForm.get('piecejointe')!.value" class="form-text text-danger clearfix">
@@ -127,7 +127,7 @@
         </div>
 
         <div class="form-group">
-          <label class="form-control-label" jhiTranslate="newbetterflyApp.reclamation.delegue" for="field_delegue">Delegue</label>
+          <label class="form-control-label" >Délégué</label>
           <select class="form-control" id="field_delegue" data-cy="delegue" name="delegue" formControlName="delegue">
             <option [ngValue]="null"></option>
             <option

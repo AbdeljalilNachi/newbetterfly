@@ -4,7 +4,6 @@ import { FormBuilder } from '@angular/forms';
 import { ActivatedRoute } from '@angular/router';
 import { Observable } from 'rxjs';
 import { finalize, map } from 'rxjs/operators';
-
 import { IRisque, Risque } from '../risque.model';
 import { RisqueService } from '../service/risque.service';
 import { IAction } from 'app/entities-own/action/action.model';
@@ -13,6 +12,7 @@ import { IUser } from 'app/entities-own/user/user.model';
 import { UserService } from 'app/entities-own/user/user.service';
 import { IProcessusSMI } from 'app/entities-own/processus-smi/processus-smi.model';
 import { ProcessusSMIService } from 'app/entities-own/processus-smi/service/processus-smi.service';
+
 
 @Component({
   selector: 'jhi-risque-update',
@@ -43,6 +43,9 @@ export class RisqueUpdateComponent implements OnInit {
     processus: [],
   });
 
+
+  
+  
   constructor(
     protected risqueService: RisqueService,
     protected actionService: ActionService,
@@ -51,6 +54,51 @@ export class RisqueUpdateComponent implements OnInit {
     protected activatedRoute: ActivatedRoute,
     protected fb: FormBuilder
   ) {}
+
+
+  onChange(): void{
+    let gra = 1;
+    let pro = 1;
+    let cri = 1;
+    switch(this.editForm.get(['gravite'])!.value) { 
+    
+      case "ONE": { 
+         gra = 1;
+         break; 
+      } 
+      case "TWO": { 
+        gra = 2;
+         break; 
+      } 
+      case "THREE": { 
+        gra = 3;
+        break; 
+     } 
+  
+   } 
+   switch(this.editForm.get(['probabilite'])!.value) { 
+    case "ONE": { 
+         pro = 1;      
+       break; 
+    } 
+    case "TWO": { 
+        pro = 2;
+       break; 
+    } 
+    case "THREE": { 
+        pro = 3;
+      break; 
+   } 
+
+ } 
+ cri = (gra * pro);
+
+ (<HTMLInputElement>document.getElementById("field_criticite")).value = cri as unknown as string ;
+
+
+    }
+
+
 
   ngOnInit(): void {
     this.activatedRoute.data.subscribe(({ risque }) => {
@@ -74,6 +122,8 @@ export class RisqueUpdateComponent implements OnInit {
     }
   }
 
+
+  
   trackActionById(index: number, item: IAction): number {
     return item.id!;
   }
